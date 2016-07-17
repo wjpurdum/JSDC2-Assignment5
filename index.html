@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>COUNTLY MVC</title>
+	<link rel='stylesheet' type="text/css" href="css/style.css">
+</head>
+<body>
+	<h1>COUNTLY</h1>
+
+  	<div id="Number"></div>
+  	<button id="countUp">Add One</button>
+  	<button id="countDown">Subtract One </button>
+  	<button id="Reset">Reset to Zero</button>
+
+
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	
+	<script type="text/x-handlebars-template" id="countly-template">
+		<div class="{{#if below-zero}}below-zero{{/if}}","{{#if above-onehundred}}above-onehundred{{/if}}">{{formatNumber}}</div>
+	</script>
+</body>
+</html>
